@@ -17,7 +17,13 @@
     </div>
 
     <picture>
-      <source srcset="images/museum-960_x_540"
+      <source srcset="
+      images/museum-320_x_180.jpg,
+      images/museum-640_x_360.jpg 2x,
+      images/museum-960_x_540.jpg 3x" media="(min-width: 320px)">
+
+      <source srcset="
+      images/museum-960_x_540"
               media="(min-width: 960px)" />
 
       <source srcset="images/museum-720_x_405"
@@ -26,8 +32,8 @@
       <source srcset="images/museum-480_x_270"
               media="(min-width: 480px)" />
   
-      <source srcset="images/museum-320_x_180"
-              media="(min-width: 320px)" />
+     
+
   
       <img class="landscape"
            src="images/museum.jpg"
